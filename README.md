@@ -37,8 +37,7 @@ You can send the following commands as a text string in <code>msg.payload</code>
 * off
 * more to come
 
-See this examples flow of usage of all commands:
-[a relative link](/sony-projector/examples/sampleflow.json)
+See this [example flow](/sony-projector/examples/sampleflow.json) to see the usage of all commands:
 
 ## Credits
 Thanks to vokkim for providing <a href="sony-sdcp-com">https://github.com/vokkim/sony-sdcp-com</a> as the basis library for this Project.
