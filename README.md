@@ -37,10 +37,11 @@ You can send the following commands as a text string in <code>msg.payload</code>
 * off
 * more to come
 
-See <a href="examples/">directory </a>for an example of all the commands.
+See this examples flow of usage of all commands:
+[a relative link](/sony-projector/examples/sampleflow.json)
 
 ## Credits
-Thank you vokkim for providing <a href="sony-sdcp-com">https://github.com/vokkim/sony-sdcp-com</a> as the basis library for this Project.
+Thanks to vokkim for providing <a href="sony-sdcp-com">https://github.com/vokkim/sony-sdcp-com</a> as the basis library for this Project.
 
 ## Contribute
 Issues and pull requests welcome
