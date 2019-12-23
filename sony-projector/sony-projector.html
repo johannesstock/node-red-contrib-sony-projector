@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    RED.nodes.registerType('sony-projector',{
+        category: 'advanced',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            projectorIp: {value:"",required:true},
+            projectorPort: {value:"", required:true},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "light.png",
+        label: function() {
+            return this.name||"sony-projector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="sony-projector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-projectorIp"><i class="icon-tag"></i> Projector IP</label>
+        <input type="text" id="node-input-projectorIp" placeholder="192.168.2.92">
+    </div>
+    <div class="form-row">
+        <label for="node-input-projectorPort"><i class="icon-tag"></i> Projector Port</label>
+        <input type="text" id="node-input-projectorPort" placeholder="53484">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="sony-projector">
+    <p>Node for controlling Sony Projectors via PJ Talk</p>
+
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string | buffer</span>
+        </dt>
+        <dd> Command as text string: on, off, getpowerstate (returns: OFF, WARMING, ON, COOLING) </dd>
+    </dl>
+    <h3>Details</h3>
+    <p>Dont forget to also configure PJ Talk in in Projector Web Interface (Community = SONY, Port, Host Address = Node Red Server Address)</p>
+    <p><code>projectorIp</code> - IP Address of the Projector</p>
+    <p><code>projectorPort</code> - Port of the Projects SDCP Server. Default: 53484 - can be configured in the Projector Web Interface</p>
+</script>
